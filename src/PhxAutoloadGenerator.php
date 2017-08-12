@@ -42,7 +42,10 @@ class PhxAutoloadGenerator extends AutoloadGenerator
         $vendorPath = $filesystem->normalizePath(realpath(realpath($config->get('vendor-dir'))));
         $targetDir = $vendorPath.'/'.$targetDir;
 
-        file_put_contents($targetDir.'/ClassLoader.php', str_replace('<?php', PHP_EOL, $autoloaderCode), FILE_APPEND);
+        file_put_contents(
+            $targetDir.'/ClassLoader.php',
+            str_replace('<?php', '// @appended by PHX composer plugin', $autoloaderCode), FILE_APPEND
+        );
     }
 
     /**
