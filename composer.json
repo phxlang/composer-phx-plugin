@@ -1,5 +1,5 @@
 {
-    "name": "phx/composer-phx-plugin",
+    "name": "phxlang/composer-phx-plugin",
     "license": "MIT",
     "type": "composer-plugin",
     "description": "Loads PHX files",
