@@ -3,15 +3,11 @@
     "license": "MIT",
     "type": "composer-plugin",
     "description": "Loads PHX files",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../phx"
-        }
-    ],
+    "minimum-stability": "alpha",
+    "prefer-stable": true,
     "require": {
         "composer-plugin-api": "^1.1",
-        "phx/phx": "dev-master"
+        "phxlang/phx": "^1.0.0"
     },
     "require-dev": {
         "composer/composer": "^1.5.0"

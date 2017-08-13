@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcb290f579f223548a9c20a875af7973",
+    "content-hash": "0a9c4270c71923fe02967326a140a745",
     "packages": [
         {
             "name": "nikic/php-parser",
@@ -58,44 +58,40 @@
             "time": "2017-07-28T14:45:09+00:00"
         },
         {
-            "name": "phx/phx",
-            "version": "dev-composer-2nd-try",
+            "name": "phxlang/phx",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phxlang/phx.git",
+                "reference": "69fc6cc5ccd63d6eda26883c6d7e2f89c08b6141"
+            },
             "dist": {
-                "type": "path",
-                "url": "../phx",
-                "reference": "5fb3300c9f2f544a8978353956b7fef7c8bc8598",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/phxlang/phx/zipball/69fc6cc5ccd63d6eda26883c6d7e2f89c08b6141",
+                "reference": "69fc6cc5ccd63d6eda26883c6d7e2f89c08b6141",
+                "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1",
                 "nikic/php-parser": "^3.0"
             },
             "require-dev": {
-                "composer/composer": "^1.5.0",
                 "phpunit/phpunit": "^6.2"
             },
             "bin": [
-                "bin/phx",
-                "bin/build"
+                "bin/phx"
             ],
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Phx\\Loader\\PhxComposerPlugin"
-            },
+            "type": "library",
             "autoload": {
                 "psr-4": {
                     "Phx\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Phx\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Loads PHX files"
+            "description": "AST-based syntax extension for PHP",
+            "time": "2017-08-13T07:20:47+00:00"
         }
     ],
     "packages-dev": [
@@ -946,11 +942,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {
-        "phx/phx": 20
-    },
-    "prefer-stable": false,
+    "minimum-stability": "alpha",
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
